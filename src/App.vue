@@ -34,7 +34,7 @@ const openSite = (site: ISite) => {
   </header>
 
   <section class="description mb-32">
-    <b style="font-weight: bold !important;">Olá, querido amigos e familiares!</b>
+    <b style="font-weight: bold !important;">Olá, queridos amigos e familiares!</b>
     <br>
     <br>
     <p>
