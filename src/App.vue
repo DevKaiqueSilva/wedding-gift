@@ -8,10 +8,8 @@ interface ISite {
 
 const sites = computed(() => {
   return [
-    { name: 'Casas Bahia', url: 'https://test.com.br' },
-    { name: 'Havan', url: 'https://test.com.br' },
-    { name: 'Carrefour', url: 'https://test.com.br' },
-    { name: 'Magazine Luiza', url: 'https://test.com.br' },
+    { name: 'Casas Bahia', url: 'https://listas.casasbahia.com.br/kaiqueefranciane052025' },
+    { name: 'Magazine Luiza', url: 'https://www.finalfeliz.de/kaique-franciane-casamento' },
   ] as Array<ISite>
 })
 
@@ -36,16 +34,29 @@ const openSite = (site: ISite) => {
   </header>
 
   <section class="description mb-32">
-    Queridos amigos e familiares Lorem Ipsum is simply dummy text of the
-    printing and typesetting industry. Lorem Ipsum has been the industry's
-    standard dummy text ever since the 1500s, when an unknown printer took a
-    galley of type and scrambled it to make a type specimen book. It has
-    survived not only five centuries, but also the leap into electronic
-    typesetting, remai.
+    <b style="font-weight: bold !important;">Olá, querido amigos e familiares!</b>
+    <br>
+    <br>
+    <p>
+      Estamos muito feliz em poder compartilhar este momento tão especial com cada um de vocês. 
+      Para nós, é uma grande alegria saber que vocês estarão ao nosso lado nessa nova jornada!
+    </p>
+    <p>
+      Muitos de vocês nos pediram sugestões para nos presentear, e ficamos imensamente 
+      gratos por isso. Esta lista de presentes foi criada com todo o cuidado, com itens que 
+      acreditamos serem úteis para o início da nossa vida juntos. No entanto, gostaríamos 
+      que soubessem que ela é apenas uma orientação. Fiquem à vontade para se inspirar nela.
+    </p>
+    <p>
+      Agradecemos profundamente por todo apoio e por estarem ao nosso lado nessa etapa tão especial.
+    </p>
+    <br>
+    <p>Com carinho,</p>
+    <p>Fran & Kaique.</p>
   </section>
 
   <section class="mb-32">
-    <div class="title mb-32">Sites</div>
+    <div class="title mb-32">Listas</div>
     <button
       v-for="(site, i) in sites"
       :key="`site-${i}`"
@@ -59,11 +70,11 @@ const openSite = (site: ISite) => {
   <section>
     <div class="title mb-32">Pix</div>
     <div class="pix-container mb-32">
-      <img src="@/assets/pix.png" height="200px" width="200px" />
+      <img src="@/assets/qrcode.png" height="200px" width="200px" />
     </div>
     <div class="description">
-      <p>PIX: 457.850.698-30</p>
-      <p>NuBank - Kaique Souza Silva</p>
+      <p>PIX: kaiquesouzasilva11@gmail.com</p>
+      <p>C6 Bank - Kaique Souza Silva</p>
     </div>
   </section>
 
@@ -91,7 +102,7 @@ header
 .description
   font-size: 14px
   text-align: center
-  max-width: 500px
+  max-width: 450px
   margin-left: auto
   margin-right: auto
 
@@ -109,6 +120,7 @@ header
   font-weight: bold
   font-size: 15px
   font-family: 'Open Sans' !important
+  cursor: pointer
   &:hover
     background: var(--color-purple)
 
