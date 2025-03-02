@@ -8,8 +8,9 @@ interface ISite {
 
 const sites = computed(() => {
   return [
-    { name: 'Casas Bahia', url: 'https://listas.casasbahia.com.br/kaiqueefranciane052025' },
+    { name: 'Mercado Livre', url: 'https://www.mercadolivre.com.br/presentes/kaique-e-franciane-3m0kv' },
     { name: 'Magazine Luiza', url: 'https://www.finalfeliz.de/kaique-franciane-casamento' },
+    { name: 'Casas Bahia', url: 'https://listas.casasbahia.com.br/kaiqueefranciane052025' },
   ] as Array<ISite>
 })
 
